@@ -1,0 +1,20 @@
+\documentclass{article}%http://tex.stackexchange.com/questions/340155/plotting-recursive-function-using-pgfplots-addplot/340256
+
+\usepackage{comment}
+\usepackage{pgfplots}
+
+%\newcommand\addLUADEDplot[5][]{%
+% \directlua{print_partial_sum(#2,#3,#4,#5,[[#1]])}%
+%}%%gibbs
+
+%\newcommand\addLUADEDplot[3][]{%
+%  \directlua{print_RKfour(#2,#3,[[#1]])}%
+%}%%runge-kutta
+
+\begin{document}
+?
+%the standard approximation $\pi = \directlua{tex.sprint(math.pi)}$.
+
+\directlua{dofile("numerov.lua")}
+
+\end{document}%
